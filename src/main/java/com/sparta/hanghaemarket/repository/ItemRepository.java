@@ -1,6 +1,6 @@
 package com.sparta.hanghaemarket.repository;
 
-import com.sparta.hanghaemarket.entity.Market;
+import com.sparta.hanghaemarket.entity.Item;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.List;

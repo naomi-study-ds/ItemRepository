@@ -1,6 +1,6 @@
 package com.sparta.hanghaemarket.entity;
 
-import com.sparta.hanghaemarket.dto.MarketRequestDto;
+import com.sparta.hanghaemarket.dto.ItemRequestDto;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -25,14 +25,14 @@ public class Item extends Timestamped {
     private int price;
 
 
-    public Market(MarketRequestDto requestDto) {
+    public Item(ItemRequestDto requestDto) {
         this.username = requestDto.getUsername();
         this.title = requestDto.getTitle();
         this.contents = requestDto.getContents();
         this.price = requestDto.getPrice();
     }
 
-    public void update(MarketRequestDto requestDto) {
+    public void update(ItemRequestDto requestDto) {
         this.username = requestDto.getUsername();
         this.title = requestDto.getTitle();
         this.contents = requestDto.getContents();
